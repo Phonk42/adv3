@@ -1,0 +1,38 @@
+.wrapper-content {
+    display: flex;
+}
+
+tfoot {
+
+    width: 100%;
+}
+
+.checkbox{
+    margin-top: 18px;
+}
+
+.editButton,
+.deleteButton {
+    width: 50px;
+    background-color: orange;
+    border: none;
+    height: 40px;
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 5px;
+    margin-top: 6px;
+}
+
+.deleteButton {
+    background-color: crimson;
+    width: 80px;
+    color: white;
+    margin-right: 160px;
+}
+
+.editButton:hover {
+    background-color: rgb(254, 203, 109);
+}
+
+.deleteButton:hover {
+    background-color: rgb(241, 109, 136);
+}

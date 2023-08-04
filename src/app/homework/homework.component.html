@@ -1,0 +1,19 @@
+<div class="inside">
+    <h1>Plan your day</h1>
+    <hr>
+    <input type="text" class="input" [(ngModel)]="inputModel">
+    <button class="add-button" (click)="addUser()">Add</button>
+    <hr>
+    <thead class="wrapper-text">
+        <tr>
+            <td style="padding-left: 20px">#</td>
+            <td style="padding-left: 70px">Task</td>
+            <td style="padding-left: 160px">Check</td>
+            <td style="padding-left: 140px">DONE\IN PROGRESS</td>
+            <td style="padding-left: 180px">Edit</td>
+            <td style="padding-left: 130px">Delete</td>
+        </tr>
+    </thead>
+    <hr>
+    <app-child [tasks]="tasks"></app-child>
+</div>

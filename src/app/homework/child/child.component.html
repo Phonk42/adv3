@@ -1,0 +1,13 @@
+<tfoot>
+    <tr class="wrapper-content" *ngFor="let task of tasks; index as i">
+        <p style="padding-left: 20px; width: 82px"> {{ i + 1 }} </p>
+        <p style="width: 193px"> {{ task.name }} </p>
+        <td style="width: 191px"><input type="checkbox" class="checkbox" [(ngModel)]="task.status"></td>
+        <p style="width: 327px" [ngStyle]="{ 'color': task.status ? 'green' : 'red' }">
+            {{ task.status ? 'Done' : 'In PROGRESS' }}
+        </p>
+        <td><button class="editButton" style="width: 60px" (click)="edit(task)">Edit</button></td>
+        <td><button class="deleteButton" style="margin-left: 100px" (click)="delete(i)">Delete</button></td>
+    </tr>
+    <hr>
+</tfoot>
